@@ -26,7 +26,6 @@ export default function SidebarItem({
   const pathname = usePathname();
   const isActive = pathname?.startsWith(path);
   const [iconExists, setIconExists] = useState(true);
-  console.log("isMobile: ", isMobile);
 
   useEffect(() => {
     if (!icon) return;

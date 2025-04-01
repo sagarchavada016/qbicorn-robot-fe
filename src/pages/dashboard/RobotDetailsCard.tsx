@@ -17,6 +17,10 @@ interface RobotDetailsCardProps {
 }
 
 const RobotDetailsCard: React.FC<RobotDetailsCardProps> = ({ data }) => {
+  if (!data) {
+    return <p className="text-white">No data available</p>;
+  }
+
   return (
     <div className="bg-gradient-qbi rounded-2xl box-shadow-qbi p-6 sm:p-8">
       {/* Header Section */}

@@ -75,10 +75,10 @@ const Dashboard = () => {
 
       {/* Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-3 gap-6">
-        {filteredRobots.length > 0 ? (
-          filteredRobots.map((robot, index) => (
-            <RobotDetailsCard key={index} data={robot} />
-          ))
+        {filteredRobots?.length > 0 ? (
+          filteredRobots.map((robot, index) =>
+            robot ? <RobotDetailsCard key={index} data={robot} /> : null
+          )
         ) : (
           <p className="text-white text-center col-span-full">
             No matching robots found.
