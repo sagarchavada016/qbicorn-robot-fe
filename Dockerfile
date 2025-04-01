@@ -20,7 +20,7 @@ RUN npm run build
 EXPOSE 8090
 
 # Set environment variables required by Google Cloud Run
-ENV PORT=8080
+ENV PORT=8090
 ENV NODE_ENV=production
 
 # Start the Next.js application
