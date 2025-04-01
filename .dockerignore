@@ -1,0 +1,20 @@
+# Ignore all .log files
+*.log
+logs/
+
+# Ignore build or dist directories
+build/
+dist/
+
+# Ignore node modules
+node_modules/
+
+# Ignore uploads folder
+uploads/
+
+# Ignore git files
+.git/
+
+# Ignore Docker environment files
+.env
+environment/
