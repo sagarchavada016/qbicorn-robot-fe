@@ -52,7 +52,7 @@ export default function Chatbot() {
               >
                 {msg.sender === "bot" && (
                   <Image
-                    src="/assets/logos/logo.svg"
+                    src="/assets/logos/logo.png"
                     alt="Bot"
                     width={30}
                     height={30}
@@ -70,7 +70,7 @@ export default function Chatbot() {
                 </div>
                 {msg.sender === "user" && (
                   <Image
-                    src="/assets/logos/logo.svg"
+                    src="/assets/logos/logo.png"
                     alt="User"
                     width={30}
                     height={30}
@@ -116,7 +116,7 @@ export default function Chatbot() {
                 className="mr-2 bg-transparent cursor-pointer hidden md:block"
               >
                 <Image
-                  src="/assets/logos/logo.svg"
+                  src="/assets/logos/logo.png"
                   alt=""
                   width={30}
                   height={30}
@@ -160,7 +160,7 @@ export default function Chatbot() {
         className="fixed bottom-2 right-4 flex items-center gap-2 px-4 py-4 bg-gradient-qbi  rounded-[13px] shadow-lg"
       >
         <Image
-          src="/assets/logos/logo.svg"
+          src="/assets/logos/logo.png"
           alt="User"
           width={30}
           height={30}

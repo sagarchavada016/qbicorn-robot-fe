@@ -60,16 +60,16 @@ export default function Sidebar({
                 src="/assets/logos/logo-full.svg"
                 alt="Logo"
                 width={207}
-                height={60}
-                className="max-h-[40px] 2xl:max-h-[60px]"
+                height={100}
+                className="max-h-[40px] 2xl:max-h-[100px]"
               />
             ) : (
               <Image
-                src="/assets/logos/logo.svg"
+                src="/assets/logos/logo.png"
                 alt="Logo"
-                width={40}
-                height={40}
-                className="max-h-[40px]"
+                width={50}
+                height={50}
+                className="max-h-[50px] h-full object-contain"
               />
             )}
             {isMobile && (
