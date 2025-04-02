@@ -1,10 +1,14 @@
 import React, { Suspense } from "react";
 import RobotsDashboardTabs from "./RobotsDashboardTabs";
 
-const RobotsDashboard = () => {
+interface RobotsDashboardProps {
+  id: string;
+}
+
+const RobotsDashboard = ({ id }: RobotsDashboardProps) => {
   return (
     <Suspense fallback={<div className="text-white">Loading...</div>}>
-      <RobotsDashboardTabs />
+      <RobotsDashboardTabs id={id} />
     </Suspense>
   );
 };

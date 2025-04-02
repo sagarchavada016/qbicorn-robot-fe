@@ -1,11 +1,11 @@
 import DashboardLayout from "@/layouts/DashboardLayout";
-import RobotsDashboard from "@/pages/robotsManagement/RobotsDashboard";
+
 import React from "react";
 
 const page = () => {
   return (
     <DashboardLayout>
-      <RobotsDashboard />
+      <h1>hello</h1>
     </DashboardLayout>
   );
 };

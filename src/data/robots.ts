@@ -1,5 +1,8 @@
-const robotDataList = [
+import { Robot } from "@/types/types";
+
+const robotDataList: Robot[] = [
   {
+    id: "robot-001",
     model: "Robot Model XR-345",
     assetId: "Essen, RV7-FRLM-",
     robotModel: "Rv-7CJD6-D",
@@ -10,6 +13,7 @@ const robotDataList = [
     imageUrl: "/assets/images/machines/machine.png",
   },
   {
+    id: "robot-002",
     model: "Robot Model XR-567",
     assetId: "Berlin, RV8-GHLM-",
     robotModel: "Rv-8XYZ-D",
@@ -17,9 +21,10 @@ const robotDataList = [
     controllerSerial: "XYZ123456",
     controllerIP: "192.168.0.21",
     controllerTemperature: "39°C",
-    imageUrl: "/assets/images/machines/machine.png",
+    imageUrl: "/assets/images/machines/machine2.png",
   },
   {
+    id: "robot-003",
     model: "Robot Model XR-789",
     assetId: "Munich, RV9-PLKM-",
     robotModel: "Rv-9ABC-D",
@@ -27,9 +32,10 @@ const robotDataList = [
     controllerSerial: "LMN987654",
     controllerIP: "192.168.0.22",
     controllerTemperature: "42°C",
-    imageUrl: "/assets/images/machines/machine.png",
+    imageUrl: "/assets/images/machines/machine4.png",
   },
   {
+    id: "robot-004",
     model: "Robot Model XR-890",
     assetId: "Hamburg, RV10-PLKM-",
     robotModel: "Rv-10DEF-D",
@@ -37,9 +43,10 @@ const robotDataList = [
     controllerSerial: "ABC112233",
     controllerIP: "192.168.0.23",
     controllerTemperature: "40°C",
-    imageUrl: "/assets/images/machines/machine.png",
+    imageUrl: "/assets/images/machines/machine2.png",
   },
   {
+    id: "robot-005",
     model: "Robot Model XR-901",
     assetId: "Frankfurt, RV11-XYZ-",
     robotModel: "Rv-11JKL-D",
@@ -47,9 +54,10 @@ const robotDataList = [
     controllerSerial: "JKL445566",
     controllerIP: "192.168.0.24",
     controllerTemperature: "38°C",
-    imageUrl: "/assets/images/machines/machine.png",
+    imageUrl: "/assets/images/machines/machine3.png",
   },
   {
+    id: "robot-006",
     model: "Robot Model XR-123",
     assetId: "Stuttgart, RV12-GHJK-",
     robotModel: "Rv-12MNO-D",
@@ -57,9 +65,10 @@ const robotDataList = [
     controllerSerial: "MNO778899",
     controllerIP: "192.168.0.25",
     controllerTemperature: "37°C",
-    imageUrl: "/assets/images/machines/machine.png",
+    imageUrl: "/assets/images/machines/machine4.png",
   },
   {
+    id: "robot-007",
     model: "Robot Model XR-234",
     assetId: "Düsseldorf, RV13-LMN-",
     robotModel: "Rv-13PQR-D",
@@ -67,9 +76,10 @@ const robotDataList = [
     controllerSerial: "PQR112233",
     controllerIP: "192.168.0.26",
     controllerTemperature: "36°C",
-    imageUrl: "/assets/images/machines/machine.png",
+    imageUrl: "/assets/images/machines/machine5.png",
   },
   {
+    id: "robot-008",
     model: "Robot Model XR-345",
     assetId: "Leipzig, RV14-XYZ-",
     robotModel: "Rv-14STU-D",
@@ -77,9 +87,10 @@ const robotDataList = [
     controllerSerial: "STU445566",
     controllerIP: "192.168.0.27",
     controllerTemperature: "35°C",
-    imageUrl: "/assets/images/machines/machine.png",
+    imageUrl: "/assets/images/machines/machine3.png",
   },
   {
+    id: "robot-009",
     model: "Robot Model XR-456",
     assetId: "Cologne, RV15-ABC-",
     robotModel: "Rv-15VWX-D",

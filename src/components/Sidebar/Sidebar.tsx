@@ -3,23 +3,16 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import SidebarItem from "./SidebarItem";
-
-interface SidebarProps {
-  isCollapsed: boolean;
-  setIsCollapsed: (val: boolean) => void;
-  isMobile?: boolean;
-  isSidebarOpen?: boolean;
-  setIsSidebarOpen?: (val: boolean) => void;
-}
+import { SidebarProps } from "@/types/types";
 
 const sidebarItems = [
   { label: "Dashboard", path: "/dashboard", icon: "humbleicons:dashboard" },
-  {
-    label: "Robots Maintenance",
-    path: "/robots-management",
-    icon: "mi:layers",
-  },
-  { label: "Settings", path: "/settings", icon: "tdesign:setting" },
+  // {
+  //   label: "Robots Maintenance",
+  //   path: "/robots-management",
+  //   icon: "mi:layers",
+  // },
+  // { label: "Settings", path: "/settings", icon: "tdesign:setting" },
 ];
 
 export default function Sidebar({

@@ -2,33 +2,61 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import OverviewTab from "./OverviewTab";
+import { useEffect, useState } from "react";
+import robotDataList from "@/data/robots";
+import { Robot } from "@/types/types";
 
 const Analytics = () => (
   <div className="text-gray-700">📈 Analytics Content</div>
 );
-// const Settings = () => <div className="text-gray-700">⚙️ Settings Content</div>;
 
-const tabs = [
-  { name: "Overview", id: "overview", component: <OverviewTab /> },
-  { name: "Trends", id: "Trends", component: <Analytics /> },
-  { name: "Point Details", id: "pointdetails", component: <Analytics /> },
-  // { name: "Alarms", id: "alarms", component: <Settings /> },
-  // {
-  //   name: "Reference Systems",
-  //   id: "referencesystems",
-  //   component: <Settings />,
-  // },
-];
+interface RobotsDashboardTabsProps {
+  id: string;
+}
 
-const RobotsDashboardTabs = () => {
+const RobotsDashboardTabs = ({ id }: RobotsDashboardTabsProps) => {
   const searchParams = useSearchParams();
   const router = useRouter();
   const activeTab = searchParams?.get("tab") || "overview";
+
+  const [robotData, setRobotData] = useState<Robot | null>(null);
+  console.log("robotData: ", robotData);
+
+  useEffect(() => {
+    if (id) {
+      const foundRobot = robotDataList?.find((robot) => robot.id === id);
+      setRobotData(foundRobot || null);
+    }
+  }, [id]);
+
+  if (!robotData) {
+    return (
+      <div className="text-center text-white mt-10">
+        <p>Robot not found!</p>
+      </div>
+    );
+  }
 
   // Function to change tabs
   const handleTabChange = (tabId: string) => {
     router.push(`?tab=${tabId}`, { scroll: false });
   };
+
+  const tabs = [
+    {
+      name: "Overview",
+      id: "overview",
+      component: <OverviewTab robotData={robotData} />,
+    },
+    { name: "Trends", id: "Trends", component: <Analytics /> },
+    { name: "Point Details", id: "pointdetails", component: <Analytics /> },
+    // { name: "Alarms", id: "alarms", component: <Settings /> },
+    // {
+    //   name: "Reference Systems",
+    //   id: "referencesystems",
+    //   component: <Settings />,
+    // },
+  ];
 
   return (
     <div className="w-full py-[15px] lg:pr-[25px]">
