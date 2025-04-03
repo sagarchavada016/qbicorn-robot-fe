@@ -13,7 +13,7 @@ const sidebarItems = [
     icon: "mi:layers",
   },
   { label: "Analytics", path: "/analytics", icon: "mdi:chart-bar" },
-  { label: "Planing", path: "/planing", icon: "mdi:calendar-month" },
+  { label: "Planning", path: "/planing", icon: "mdi:calendar-month" },
   { label: "Terminal", path: "/terminal", icon: "mdi:console" },
   { label: "Agents", path: "/agents", icon: "mdi:robot" },
   { label: "Settings", path: "/settings", icon: "tdesign:setting" },
