@@ -56,7 +56,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 alt="Logo"
                 height={60}
                 width={207}
-                className="max-h-[40px] 2xl:max-h-[60px]"
+                className="max-h-[80px] 2xl:max-h-[120px]"
               />
             </div>
             <div className="w-10"></div> {/* Placeholder to balance layout */}

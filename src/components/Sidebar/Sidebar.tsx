@@ -61,7 +61,7 @@ export default function Sidebar({
                 alt="Logo"
                 width={207}
                 height={100}
-                className="max-h-[40px] 2xl:max-h-[100px]"
+                className="max-h-[80px] 2xl:max-h-[200px]"
               />
             ) : (
               <Image
